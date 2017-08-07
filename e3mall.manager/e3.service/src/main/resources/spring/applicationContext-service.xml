@@ -15,4 +15,5 @@
 	<dubbo:registry address="192.168.110.97:2181" protocol="zookeeper"></dubbo:registry>
 	<dubbo:protocol name="dubbo" port="20880"></dubbo:protocol>
 	<dubbo:service interface="cn.e3mall.service.ItemServiceI" ref="itemService" timeout="3000000"></dubbo:service>
+	<dubbo:service interface="cn.e3mall.service.ItemCatServiceI" ref="itemCatService" timeout="3000000"></dubbo:service>
 </beans>
