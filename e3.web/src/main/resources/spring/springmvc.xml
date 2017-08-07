@@ -19,4 +19,9 @@
 	<dubbo:application name="e3.web"/>
 	<dubbo:registry protocol="zookeeper" address="192.168.110.97:2181"/>
 	<dubbo:reference interface="cn.e3mall.service.ItemServiceI" id="itemServiceI" />
+	<dubbo:reference interface="cn.e3mall.service.ItemCatServiceI" id="itemCatServiceI" />
+	<!-- 静态资源配置 -->
+	<mvc:resources location="/css/" mapping="/css/**"></mvc:resources>
+	<mvc:resources location="/js/" mapping="/js/**"></mvc:resources>
+	
 </beans>
